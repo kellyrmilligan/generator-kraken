@@ -1,8 +1,13 @@
-'use strict';
 
 <% if (requireJs) { %>
 
-require(['config' /*, Dependencies */], function (config) {
+requirejs.config({
+    paths: {}
+});
+
+require([/*, Dependencies */], function () {
+
+    'use strict';
 
     var app = {
         initialize: function () {
